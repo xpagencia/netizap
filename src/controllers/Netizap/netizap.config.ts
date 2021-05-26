@@ -39,10 +39,12 @@ namespace Netizap {
     post = async (url: string, body: object = {}) => {
       let data = {
         'app': 'XPZap 0.0.0.1',
-        'accesskey': this.#accessKey,
-        'analyse': 'true'
+        'accesskey': this.#accessKey
       };
-
+      data = {
+        ...data,
+        ...body
+      }
       return await request.post(url, data, this.#headers);
     };
     get = async (url: string) => {
