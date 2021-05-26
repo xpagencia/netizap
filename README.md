@@ -1,10 +1,6 @@
-# netizap
+# Netizap by Node.JS
 
-API de integração com whatsapp através da plataforma NetiZap.
-
-## iniciar ambiente
-
-npx eslint --init
+API de integração com whatsapp através da plataforma NetiZap utilizando NODE.JS.
 
 ### configuração base
 
