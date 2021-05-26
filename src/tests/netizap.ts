@@ -5,8 +5,7 @@ require('dotenv').config({
 
 import Netizap from '@controllers/Netizap/netizap';
 
-//const netizapConfig = new Netizap.Config("554187742447", 13142, "node", "KkZo2aB0Ak2DN5TQ6Avg");
-const netizapConfig = new Netizap.Config("554730275676", 13140, "node", "yXF2uVAaLPwJLUNWEEO1");
+const netizapConfig = new Netizap.Config(process.env.NZ_ACESSO_ROOT_PHONE, process.env.NZ_ACESSO_ROOT_PORT, "node", process.env.NZ_ACESSO_ROOT_TOKEN);
 console.log("urlbase", netizapConfig.url);
 
 const services = new Netizap.Services(netizapConfig);
